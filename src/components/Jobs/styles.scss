@@ -1,0 +1,16 @@
+.card {
+  border: 1px solid #dbe9ed;
+  width: 100%;
+  padding: 10px;
+
+  &[data-selected="true"] {
+    background-color: #f7fdff;
+    border-left-width: 5px;
+    border-left-color: #01567c;
+    padding-left: 5px;
+  }
+
+  &:hover {
+    background: rgb(243, 244, 244);
+  }
+}
