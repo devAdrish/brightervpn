@@ -1,17 +1,16 @@
 import { Box, Stack } from "@mantine/core";
 import { PageWrapper } from "components/PageWrapper";
+import { useFindJobsQuery } from "services/jobsApi";
 import JobsBoard from "components/Jobs/JobsBoard";
-import { fakeJobs } from "constants/fakeData";
 
 const JobSearch = () => {
-  // api call to get jobs
-  const jobs = fakeJobs;
+  const { data, isLoading } = useFindJobsQuery({ status: "", search: "" }, { refetchOnMountOrArgChange: true });
 
   return (
-    <PageWrapper>
+    <PageWrapper isLoading={isLoading}>
       <Stack>
         <Box>Search Box</Box>
-        <JobsBoard jobs={jobs} />
+        <JobsBoard jobs={data || []} />
       </Stack>
     </PageWrapper>
   );

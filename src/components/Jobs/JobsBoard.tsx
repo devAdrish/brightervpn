@@ -1,5 +1,5 @@
 import { Box, Group } from "@mantine/core";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import JobItem from "./JobItem";
 import JobPreview from "./JobPreview";
 
@@ -8,8 +8,14 @@ type JobsBoardProps = {
 };
 
 const JobsBoard: React.FC<JobsBoardProps> = ({ jobs }) => {
-  const [selectedJobId, setSelectedJobId] = useState(jobs[0].id || 0);
+  const [selectedJobId, setSelectedJobId] = useState(0);
   const selectedJob = jobs.find((item) => item.id === selectedJobId);
+
+  useEffect(() => {
+    if (jobs) {
+      if (selectedJobId === 0) setSelectedJobId(jobs[0]?.id || 0);
+    }
+  }, [jobs]);
 
   return (
     <Group gap={0}>
