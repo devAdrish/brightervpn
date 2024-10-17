@@ -26,8 +26,8 @@ const Login = () => {
   // const navigate = useNavigate();
   // const [login, { isLoading }] = useLoginMutation();
 
-  const handleLogin = async ({ email, password }: JObj) => {
-    const payload = { email, password };
+  const handleLogin = async () => {
+    // const payload = { email, password };
     // login(payload)
     //   .unwrap()
     //   .then((result) => {
