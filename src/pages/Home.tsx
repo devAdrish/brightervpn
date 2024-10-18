@@ -9,8 +9,13 @@ const Home = () => {
     window.location.href = appUrl;
   };
 
-  const handleOpeniOS = () => {
+  const handleOpenUniiOS = () => {
     const appUrl = "https://brightervpn-test.vercel.app";
+    window.location.href = appUrl;
+  };
+
+  const handleOpeniOS = () => {
+    const appUrl = "brightervpn-test://";
     window.location.href = appUrl;
   };
 
@@ -26,6 +31,9 @@ const Home = () => {
       </button>
       <button style={{ margin: 10 }} onClick={handleOpeniOS}>
         Open BrighterVPN iOS
+      </button>
+      <button style={{ margin: 10 }} onClick={handleOpenUniiOS}>
+        Open BrighterVPN UniversalLink iOS
       </button>
     </div>
   );
