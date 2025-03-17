@@ -1,39 +1,22 @@
 const Home = () => {
   const handleOpenApp = () => {
-    const appUrl = "https://brightervpn-test.vercel.app/mobile-app";
+    const appUrl = "https://brightervpn-test.vercel.app/voyagerapp";
     window.location.href = appUrl;
   };
 
-  const handleOpenMyAccount = () => {
-    const appUrl = "https://brightervpn-test.vercel.app/mobile-app/account";
-    window.location.href = appUrl;
-  };
-
-  const handleOpenUniiOS = () => {
-    const appUrl = "https://brightervpn-test.vercel.app";
-    window.location.href = appUrl;
-  };
-
-  const handleOpeniOS = () => {
-    const appUrl = "brightervpn-test://";
+  const handleOpenResetAccount = () => {
+    const appUrl = "https://brightervpn-test.vercel.app/voyagerapp/reset-password/1de43347-124b-4a8b-bd4b-3af564972d34";
     window.location.href = appUrl;
   };
 
   return (
     <div>
       <h1 style={{ margin: 10 }}>Hello World</h1>
-
       <button style={{ margin: 10 }} onClick={handleOpenApp}>
-        Open BrighterVPN App
+        Open App
       </button>
-      <button style={{ margin: 10 }} onClick={handleOpenMyAccount}>
-        Open BrighterVPN Account
-      </button>
-      <button style={{ margin: 10 }} onClick={handleOpeniOS}>
-        Open BrighterVPN iOS
-      </button>
-      <button style={{ margin: 10 }} onClick={handleOpenUniiOS}>
-        Open BrighterVPN UniversalLink iOS
+      <button style={{ margin: 10 }} onClick={handleOpenResetAccount}>
+        Open Reset Link
       </button>
     </div>
   );

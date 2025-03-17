@@ -3,10 +3,10 @@
     "apps": [],
     "details": [
       {
-        "appID": "J3T8W3347Y.com.brighter.vpn.ios",
+        "appID": "3G95QB28PR.io.accesswealth.voyager",
         "paths": [
           "*",
-          "/mobile-app/*"
+          "/voyagerapp/*"
         ]
       }
     ]
