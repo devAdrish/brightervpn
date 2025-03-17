@@ -5,7 +5,6 @@
       {
         "appID": "3G95QB28PR.io.accesswealth.voyager",
         "paths": [
-          "*",
           "/voyagerapp/*"
         ]
       }

@@ -1,23 +1,16 @@
+const customSchemeAppUrl = "voyagerapp://";
+const customSchemeAppResetUrl = "voyagerapp://reset-password/1de43347-124b-4a8b-bd4b-3af564972d34";
+
 const Home = () => {
-  const handleOpenApp = () => {
-    const appUrl = "voyagerapp:/";
-    window.location.href = appUrl;
-  };
-
-  const handleOpenResetAccount = () => {
-    const appUrl = "voyagerapp://reset-password/1de43347-124b-4a8b-bd4b-3af564972d34";
-    window.location.href = appUrl;
-  };
-
   return (
     <div>
-      <h1 style={{ margin: 10 }}>Hello World v1</h1>
-      <button style={{ margin: 10 }} onClick={handleOpenApp}>
+      <h1 style={{ margin: 10 }}>Hello World v2</h1>
+      <a href={customSchemeAppUrl} target="_blank" style={{ margin: 10 }}>
         Open App
-      </button>
-      <button style={{ margin: 10 }} onClick={handleOpenResetAccount}>
+      </a>
+      <a href={customSchemeAppResetUrl} target="_blank" style={{ margin: 10 }}>
         Open Reset Link
-      </button>
+      </a>
     </div>
   );
 };
