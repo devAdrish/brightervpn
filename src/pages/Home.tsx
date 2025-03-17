@@ -1,17 +1,17 @@
 const Home = () => {
   const handleOpenApp = () => {
-    const appUrl = "https://brightervpn-test.vercel.app/voyagerapp";
+    const appUrl = "voyagerapp:/";
     window.location.href = appUrl;
   };
 
   const handleOpenResetAccount = () => {
-    const appUrl = "https://brightervpn-test.vercel.app/voyagerapp/reset-password/1de43347-124b-4a8b-bd4b-3af564972d34";
+    const appUrl = "voyagerapp://reset-password/1de43347-124b-4a8b-bd4b-3af564972d34";
     window.location.href = appUrl;
   };
 
   return (
     <div>
-      <h1 style={{ margin: 10 }}>Hello World</h1>
+      <h1 style={{ margin: 10 }}>Hello World v1</h1>
       <button style={{ margin: 10 }} onClick={handleOpenApp}>
         Open App
       </button>
